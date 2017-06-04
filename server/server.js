@@ -3,7 +3,7 @@ var path = require('path');
 var config = require('../webpack.config.js');
 var webpack = require('webpack');
 var webpackDevMiddleware = require('webpack-dev-middleware');
-var webpackHotMiddleware = require('webpack-hot-middleware')
+var webpackHotMiddleware = require('webpack-hot-middleware');
 var app = express();
 
 //app.use(webpack in dev mode)

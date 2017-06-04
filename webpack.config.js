@@ -11,8 +11,8 @@ module.exports = {
         port: 3001
     },*/
     output: {
-        path: path.join(__dirname, "dist"),
-        //we can use require("path").resolve("./dist")
+        // path: path.join(__dirname, "dist"),
+        path : require("path").resolve("./dist"),
         filename: 'bundle.js',
         publicPath: '/'
     },
