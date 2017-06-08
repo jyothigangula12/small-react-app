@@ -1,13 +1,16 @@
 import React from 'react'
 import { render } from 'react-dom'
-import TextIn from './TextIn'
+import TodoInput from './TodoInput'
+import TodoList from './TodoList'
+
  class App extends React.Component{
 
  	 render(){
        return (
        	<div>
-       	<div>This is actual react app with dev and hot module</div>
- 	    <TextIn/>
+       	<div>Todo List</div>
+ 	    <TodoInput/>
+ 	    <TodoList/>
  	    </div>
  	 )}
 
