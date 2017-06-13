@@ -27,20 +27,21 @@ import {addTodo} from '../store/actions'
     	})
    }
     handleSubmit(event){
-    	
+    	event.preventDefault()
     	this.props.addTodo(this.state.todo, ()=>{console.log('action dispatched!!!!')})
     }
  	 render(){
        return (
        	<div>
-       	   
+       	   <form onSubmit = {this.handleSubmit.bind(this)}>
 	       	<input type ="text"
 	       	       name = "text1"
 	       	       placeholder = "Enter Todo"
 	       	       value = {this.state.input}
 	       	       onChange = {this.handleChange.bind(this)}/>
-	 	    <button onClick = {this.handleSubmit.bind(this)}>Submit</button>       
+	 	    <input type = "submit" text = "Submit"/>       
 	 	    {/*<TodoList delete = {this.delete.bind(this)}/>*/}
+        </form>
         </div>
  	 )}
 
